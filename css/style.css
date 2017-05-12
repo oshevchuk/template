@@ -1,2 +1,13 @@
 body {
-  background-color: red; }
+  background-color: black;
+  font-family: "Open Sans", sans-serif; }
+
+.header .cont {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: green; }
