@@ -165,6 +165,13 @@ $header-color: rgb(102,102,102);
       opacity: 1;
       display: block;
     }
+
+    .add-to-card{
+      display: block;
+    }
+    .raiting, .price, .product_description{
+      display: none;
+    }
   }
 
   .product_description{
@@ -174,5 +181,18 @@ $header-color: rgb(102,102,102);
       margin: auto;
       display: block;
     }
+  }
+
+  .raiting{
+    color: yellow;
+
+    span:hover{
+      color: red;
+    }
+  }
+
+  .add-to-card{
+    display: none;
+    min-height: 50px;
   }
 }

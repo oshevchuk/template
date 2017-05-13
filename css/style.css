@@ -111,8 +111,19 @@ body {
     transition: 0.6s;
     opacity: 1;
     display: block; }
+  .items-reg .item:hover .add-to-card {
+    display: block; }
+  .items-reg .item:hover .raiting, .items-reg .item:hover .price, .items-reg .item:hover .product_description {
+    display: none; }
   .items-reg .product_description {
     display: flex; }
     .items-reg .product_description h4 {
       margin: auto;
       display: block; }
+  .items-reg .raiting {
+    color: yellow; }
+    .items-reg .raiting span:hover {
+      color: red; }
+  .items-reg .add-to-card {
+    display: none;
+    min-height: 50px; }
