@@ -76,32 +76,39 @@
     <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
         <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
             <div class="camera_caption fadeFromBottom">
-                Lorem ipsum dolor sit amet, consectetuLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. r adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetuLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. r adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
             </div>
         </div>
         <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
             <div class="camera_caption fadeFromBottom">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
             </div>
         </div>
         <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg">
             <div class="camera_caption fadeFromBottom">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
             </div>
         </div>
         <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg">
             <div class="camera_caption fadeFromBottom">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
             </div>
         </div>
         <div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg">
             <div class="camera_caption fadeFromBottom">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
             </div>
         </div>
         <div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg">
             <div class="camera_caption fadeFromBottom">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
             </div>
         </div>
     </div><!-- #camera_wrap_1 -->
@@ -109,20 +116,62 @@
 
 </div><!-- .fluid_container -->
 
-<div class="container">
-    1
+<div class="container content">
+    <div class="col-md-2">
+        <h3>Categories</h3>
+        <ul>
+            <li>tv audio</li>
+            <li>smartphones</li>
+            <li>smartphones</li>
+            <li>photo audio</li>
+            <li>laptop</li>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <h3>Products</h3>
+        <div class="row">
+            <div class="items-reg">
+                <div class="item">
+                    <div class="prosuct_img">
+                        <a href="#">
+                            <img src="images/2.jpg" alt="" class="first-img">
+                            <img src="images/3.jpg" alt="" class="second-img">
+                        </a>
+                        <div>12</div>
+                        <div class="product_description">
+                            <h4>X--treme-32</h4>
+                        </div>
+                        <div><span>20$</span></div>
+                    </div>
+                </div>
+                <div class="item">
+                    12
+                </div>
+                <div class="item">
+                    12
+                </div>
+                <div class="item">
+                    12
+                </div>
+                <div class="item">
+                    12
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <!-- Latest compiled and minified JavaScript -->
 <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
 <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"-->
-        <!--integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+<!--integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
 
 
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"-->
-        <!--integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"-->
-        <!--crossorigin="anonymous"></script>-->
+<!--integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"-->
+<!--crossorigin="anonymous"></script>-->
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
@@ -130,12 +179,16 @@
 <script type="text/javascript" src="js/camera.js"></script>
 
 <script>
-    jQuery(function(){
+    jQuery(function () {
 
         jQuery('#camera_wrap_1').camera({
             thumbnails: false,
             height: '400px',
-            pagination: false
+            pagination: false,
+            fx: 'random',
+            playPause: false,
+            pauseOnClick: false,
+            hover: false
         });
 
     });
