@@ -86,7 +86,7 @@ body {
 .content {
   color: white; }
   .content h3 {
-    border-bottom: 1px solid grey; }
+    border-bottom: 1px solid #353535; }
 
 .items-reg {
   justify-content: space-around;
@@ -132,6 +132,14 @@ body {
   .items-reg .add-to-card {
     display: none;
     min-height: 50px; }
+
+.menu {
+  list-style: none;
+  padding-left: 10px; }
+  .menu li {
+    text-transform: uppercase; }
+    .menu li a {
+      color: white; }
 
 .item1 {
   display: inline-block;
@@ -342,6 +350,7 @@ body {
   background-color: #40c781;
   text-align: center;
   line-height: 25px;
+  width: 100%;
   font-weight: 700;
   color: #fff;
   border-radius: 3px;
@@ -438,3 +447,43 @@ body {
 
 .nobody {
   width: 100%; }
+
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+  width: 34px;
+  height: 55px; }
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box; }
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite; }
+
+@keyframes scroll {
+  0% {
+    opacity: 0; }
+  10% {
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    transform: translateY(15px);
+    opacity: 0; } }

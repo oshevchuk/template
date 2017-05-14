@@ -123,7 +123,7 @@ $header-color: rgb(102,102,102);
 .content{
   color: white;
   h3{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #353535;
   }
 }
 
@@ -203,6 +203,22 @@ $header-color: rgb(102,102,102);
     min-height: 50px;
   }
 }
+
+
+.menu{
+  list-style: none;
+  padding-left: 10px;
+
+  li{
+    text-transform: uppercase;
+
+    a{
+      color: white;
+    }
+  }
+}
+
+
 
 //test item
 .item1{
@@ -421,6 +437,7 @@ $header-color: rgb(102,102,102);
   background-color: #40c781;
   text-align:center;
   line-height:25px;
+  width: 100%;
   font-weight:700;
   color:#fff;
   border-radius:3px;
@@ -526,4 +543,42 @@ $header-color: rgb(102,102,102);
 
 .nobody{
   width: 100%;
+}
+
+//scroll downs button
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
