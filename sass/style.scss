@@ -44,7 +44,10 @@ $header-color: rgb(102,102,102);
 
   color: $header-color;
   //border: 1px solid white;
-  border-bottom: 1px solid $header-color;
+
+  .container .row{
+    border-bottom: 1px solid $header-color;
+  }
 
   .row div{
     padding-top: 5px;

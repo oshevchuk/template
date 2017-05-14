@@ -30,8 +30,9 @@ body {
   width: 100%;
   font-size: 13px;
   line-height: 18px;
-  color: #666666;
-  border-bottom: 1px solid #666666; }
+  color: #666666; }
+  .header-area .container .row {
+    border-bottom: 1px solid #666666; }
   .header-area .row div {
     padding-top: 5px;
     display: flex;
