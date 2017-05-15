@@ -37,6 +37,22 @@ $header-color: rgb(102, 102, 102);
   width: 20px;
 }
 
+.fixed-head{
+  display: none;
+  position: fixed;
+  background-color: rgba(1,1,1,0.7);
+  z-index: 10;
+  .container{
+    .row{
+      border-bottom: none!important;
+    }
+  }
+}
+
+.pre-head{
+  height: 100px;
+}
+
 .header-area {
   width: 100%;
   font-size: 13px;
@@ -708,4 +724,40 @@ $header-color: rgb(102, 102, 102);
 
 .footer{
   border-top: 1px solid #353535;
+  border-bottom: 1px solid #353535;
+  display: flex;
+  min-height: 50px;
+
+  ul{
+    list-style: none;
+    padding-left: 0px;
+    display: block;
+    margin: auto;
+
+    li{
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+      font-size: 20px;
+
+      a{
+        color: grey;
+      }
+      a:hover{
+        color: #40c781;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.cop{
+  display: block;
+  font-size: 0.8em;
+  text-align: center;
+  color: grey;
+  font-weight: 100;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

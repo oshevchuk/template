@@ -8,7 +8,7 @@ $('.add-to-cart').on('click', function () {
         imgtodrag=$(this).parent().parent().parent().parent().parent().find('img').eq(0);
     }
 
-    console.log(imgtodrag);
+    // console.log(imgtodrag);
     if(imgtodrag){
         var imgclone = imgtodrag.clone()
             .offset({
@@ -62,17 +62,70 @@ $(".container-item").hover(function() {
 
 
 window.onscroll = function() {scrollFunction()};
+var scrolled=false;
+
+var lastScrollTop = 0;
+// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+    var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    if (st > lastScrollTop){
+        // downscroll code
+        // console.log('up');
+    } else {
+        // upscroll code
+        // console.log('down');
+        if(document.body.scrollTop<$('#cloned')[0].offsetTop &&scrolled){
+            $('#cloned').removeClass('pre-head');
+            $('#hed-reg').removeClass('fixed-head');
+            // $('html, body').stop().animate({
+            //     scrollTop: 0
+            // }, 30, 'swing');
+            $('html, body').scrollTop(0);
+            scrolled=false;
+        }
+    }
+    lastScrollTop = st;
+}, false);
+
 
 function scrollFunction() {
+    // console.log(document.body.scrollTop);
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("up").style.display = "block";
+        // $('#hed-reg').display='none';
     } else {
         document.getElementById("up").style.display = "none";
     }
+
+    if(document.body.scrollTop>50&&!scrolled){
+        scrolled=true;
+        // console.log(1);
+
+        $('html, body').stop().animate({
+            scrollTop: $('.content').eq(0).offset().top
+        }, 1000);
+
+        $('#cloned').addClass('pre-head');
+
+         // $('#hed-reg').css({'position':'fixed', 'background-color':'rgba(1,1,1,0.5)', 'z-index':'10', 'border-bottom':'none'});
+        $('#hed-reg').addClass('fixed-head').delay(400).show("blind", {}, 1000);
+    }
+
+    // if(document.body.scrollTop<390&&scrolled){
+    //     $('#cloned').removeClass('pre-head');
+    // }
+
+    // if(document.body.scrollTop=0&&scrolled){
+    //     scrolled=false;
+    // }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function goTop() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox
+
+    // $('html, body').animate({
+    //     scrollTop: 0
+    // }, 300);
 }
