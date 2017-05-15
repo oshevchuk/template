@@ -59,3 +59,20 @@ $(".container-item").hover(function() {
         $(".container-item").css("z-index","1000")
     }, 500);
 });
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("up").style.display = "block";
+    } else {
+        document.getElementById("up").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function goTop() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
