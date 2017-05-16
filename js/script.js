@@ -129,3 +129,10 @@ function goTop() {
     //     scrollTop: 0
     // }, 300);
 }
+
+var id_show=false;
+function togleMenu() {
+    // id_show ?  $('.menu').hide(400) : $('.menu').show(400);
+    $('#menu').toggleClass('collapsed-menu');
+    id_show=!id_show;
+}
