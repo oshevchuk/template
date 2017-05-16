@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+body{
+  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+}
+
+.cont{
+  margin: auto;
+  width: 450px;
+  min-height: 700px;
+  border: 1px solid #00b3ee;
+
+  .head-button{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    padding: 25px;
+  }
+
+  .info-banner{
+    margin: auto;
+    margin-left: 40px;
+  }
+
+  .mons{
+    li{
+      display: inline-block;
+    }
+  }
+
+  .element{
+    margin: 20px;
+    text-align: justify;
+    background-color: #00b3ee;
+    height: 300px;
+    width: 100%;
+
+    //shape-inside:polygon(0 0, 300px 0, 350px 300px, 150px 300px);
+    //shape-padding:20px;
+    //transition: all 2s ease;
+    //-webkit-clip-path:polygon(0 0, 300px 0, 350px 300px, 150px 300px);
+
+    //-----------------------------------------------------------------
+    ////circle
+    //shape-padding: 15px;
+    ///* blink */
+    //shape-inside: circle(250px, 250px, 210px);
+    //-webkit-clip-path: circle(250px, 250px, 210px);
+    ///* webkit */
+    //shape-inside: circle(210px at 250px 250px);
+    //-webkit-clip-path: circle(210px at 250px 250px);
+    //
+    ////transition: 2s;
+
+
+    //  --------------------------------------------
+    //  part3
+    shape-inside: polygon(250px 0px, 350px 170px, 500px 180px, 380px 320px, 450px 500px, 250px 420px, 50px 500px, 120px 320px, 0px 180px, 150px 170px );
+    shape-padding: 10px;
+    transition: all 3s ease;
+    -webkit-clip-path: polygon(250px 10%, 350px 170px, 500px 180px, 380px 320px, 450px 500px, 250px 420px, 50px 500px, 120px 320px, 0px 180px, 150px 170px );
+
+    box-shadow: 0px 0px 0px 15px #f00;
+    border: 3px solid blue;
+  }
+
+  .element1{
+    //shape-inside:polygon(110px 0, 200px 0, 450px 300px, 150px 300px);
+    //-webkit-clip-path:polygon(110px 0, 200px 0, 450px 300px, 150px 300px);
+
+    //shape-inside: circle(50%, 50%, 50%);
+    //-webkit-clip-path: circle(50%, 50%, 50%);
+    ///* new syntax for webkit */
+    //shape-inside: circle(50% at 50% 50%);
+    //-webkit-clip-path: circle(50% at 50% 50%);
+
+    //----------------------
+    //-webkit-animation: scale 3s ease infinite;
+
+    //---------------------------
+    //part 3
+    shape-inside: polygon(250px 0, 500px 0, 500px 180px, 500px 320px, 500px 500px, 250px 500px, 0 500px, 0 320px, 0 180px, 0 0);
+    -webkit-clip-path: polygon(250px 0, 500px 0, 500px 180px, 500px 320px, 500px 500px, 250px 500px, 0 500px, 0 320px, 0 180px, 0 0);
+
+  }
+  .element:hover{
+    background-color: #0000AA;
+    transition: 1s;
+  }
+}
+
+@keyframes scale {
+  0% {
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(250px, 250px, 210px);
+
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(210px at 250px 250px);
+  }
+  50% {
+    shape-inside: circle(250px, 250px, 250px);
+    -webkit-clip-path: circle(250px, 250px, 250px);
+
+    shape-inside: circle(250px, 250px, 250px);
+    -webkit-clip-path: circle(250px at 250px 250px);
+  }
+  0% {
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(250px, 250px, 210px);
+
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(210px at 250px 250px);
+  }
+}

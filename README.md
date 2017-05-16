@@ -12,3 +12,13 @@ http://preview.themeforest.net/item/haxico-technology-ecommerce-template/full_sc
 
 infa:
 http://www.wdrfree.com/107/20-purecss-call-to-action-animated-buttons-for-inspiration
+
+poly fluid sizing
+https://codepen.io/jakobud/pen/vmKLYb
+
+
+//--animate
+
+shape animation
+https://sarasoueidan.com/blog/animating-css-shapes/
+https://www.html5rocks.com/en/tutorials/shapes/getting-started/
