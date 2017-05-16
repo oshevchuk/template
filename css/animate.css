@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+body {
+  font-size: 1.1em;
+  font-family: 'Lato', sans-serif; }
+
+.cont {
+  position: relative;
+  margin: auto;
+  width: 450px;
+  min-height: 700px;
+  border: 1px solid #00b3ee; }
+  .cont .head-button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    padding: 25px; }
+  .cont .info-banner {
+    margin: auto;
+    margin-left: 40px; }
+  .cont .mons li {
+    display: inline-block; }
+  .cont .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    margin-bottom: 50px;
+    z-index: 3; }
+  .cont .element {
+    position: absolute;
+    background-color: #00b3ee;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    -webkit-clip-path: polygon(0% 43%, 13% 51%, 30% 57%, 39% 50%, 50% 63%, 66% 58%, 79% 67%, 91% 69%, 100% 75%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 43%, 13% 51%, 30% 57%, 39% 50%, 50% 63%, 66% 58%, 79% 67%, 91% 69%, 100% 75%, 100% 100%, 0% 100%);
+    transition: all 1s ease; }
+  .cont .element1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: auto;
+    -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%, 20% 10%);
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%, 20% 10%);
+    transition: all 1s; }
+  .cont .element:hover {
+    background-color: #0000AA;
+    transition: 1s; }
+
+.hide * {
+  display: none !important;
+  opacity: 0;
+  background-color: red; }
+
+@keyframes scale {
+  0% {
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(250px, 250px, 210px);
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(210px at 250px 250px); }
+  50% {
+    shape-inside: circle(250px, 250px, 250px);
+    -webkit-clip-path: circle(250px, 250px, 250px);
+    shape-inside: circle(250px, 250px, 250px);
+    -webkit-clip-path: circle(250px at 250px 250px); }
+  0% {
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(250px, 250px, 210px);
+    shape-inside: circle(250px, 250px, 210px);
+    -webkit-clip-path: circle(210px at 250px 250px); } }

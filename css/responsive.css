@@ -1,0 +1,11 @@
+h1 {
+  font-size: 22px; }
+  @media (min-width: 576px) {
+    h1 {
+      font-size: calc(1.04167vw + 16px); } }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: calc(4.46429vw - 10.28571px); } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 34px; } }

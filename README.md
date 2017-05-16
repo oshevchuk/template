@@ -22,3 +22,4 @@ https://codepen.io/jakobud/pen/vmKLYb
 shape animation
 https://sarasoueidan.com/blog/animating-css-shapes/
 https://www.html5rocks.com/en/tutorials/shapes/getting-started/
+http://bennettfeely.com/clippy/
